@@ -7,7 +7,7 @@ function ProductList() {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        axios.get('https://product-catalog-9wje.onrender.com')
+        axios.get('https://product-catalog-9wje.onrender.com/products')
             .then(res => {
                 setProducts(res.data)
             })
@@ -17,7 +17,7 @@ function ProductList() {
         const confirmDelete = window.confirm('Are you sure you want to delete this product?')
 
         if (confirmDelete) {
-            axios.delete(`https://product-catalog-9wje.onrender.com/${id}`)
+            axios.delete(`https://product-catalog-9wje.onrender.com/products${id}`)
                 .then(res => {
                     alert('Product deleted successfully')
 

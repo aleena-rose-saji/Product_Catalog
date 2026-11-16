@@ -17,7 +17,7 @@ function AddProduct() {
             alert('Please fill all details')
         }
         else {
-            axios.post('https://product-catalog-9wje.onrender.com', {
+            axios.post('https://product-catalog-9wje.onrender.com/products', {
                 name,
                 price,
                 category
