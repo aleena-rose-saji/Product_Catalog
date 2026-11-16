@@ -23,15 +23,15 @@ function App() {
 
       </div>
 
-      <Routes>
+     <Routes>
+    <Route path="/" element={<ProductList />} />
 
-        <Route path="/products" element={<ProductList />} />
+    <Route path="/products" element={<ProductList />} />
 
-        <Route path="/add-product" element={<AddProduct />} />
+    <Route path="/add-product" element={<AddProduct />} />
 
-        <Route path="/edit-product/:id" element={<EditProduct />} />
-
-      </Routes>
+    <Route path="/edit-product/:id" element={<EditProduct />} />
+   </Routes>
 
     </BrowserRouter>
   )
