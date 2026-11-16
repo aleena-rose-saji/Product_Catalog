@@ -13,7 +13,7 @@ function EditProduct() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/products/${id}`)
+        axios.get(`https://product-catalog-9wje.onrender.com/${id}`)
             .then(res => {
                 setName(res.data.name)
                 setPrice(res.data.price)
@@ -24,7 +24,7 @@ function EditProduct() {
     const handleUpdate = (e) => {
         e.preventDefault()
 
-        axios.put(`http://localhost:3000/products/${id}`, {
+        axios.put(`https://product-catalog-9wje.onrender.com/${id}`, {
             name,
             price,
             category

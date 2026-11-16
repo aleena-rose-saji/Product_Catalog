@@ -17,7 +17,7 @@ function AddProduct() {
             alert('Please fill all details')
         }
         else {
-            axios.post('http://localhost:3000/products', {
+            axios.post('https://product-catalog-9wje.onrender.com', {
                 name,
                 price,
                 category
