@@ -24,7 +24,7 @@ function EditProduct() {
     const handleUpdate = (e) => {
         e.preventDefault()
 
-        axios.put(`https://product-catalog-9wje.onrender.com/products{id}`, {
+        axios.put(`https://product-catalog-9wje.onrender.com/products${id}`, {
             name,
             price,
             category
